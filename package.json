@@ -1,0 +1,25 @@
+{
+  "name": "templates-emails-transaccionales",
+  "version": "1.0.0",
+  "description": "Contiene plantillas de correos electrónicos diseñadas para ser enviadas automáticamente en respuesta a la interacción de usuarios con formularios de contacto en un sitio web de WordPress. Cada plantilla está optimizada para proporcionar una comunicación efectiva y profesional entre el sitio web y sus usuarios o administradores tras la recepción de un mensaje de contacto.",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently \"minify src/notificacion-usuario.html > build/notificacion-usuario.minify.html\" \"minify src/notificacion-admin.html > build/notificacion-admin.minify.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jairocolondev/templates-emails-transaccionales.git"
+  },
+  "author": "Jairo Colon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jairocolondev/templates-emails-transaccionales/issues"
+  },
+  "homepage": "https://github.com/jairocolondev/templates-emails-transaccionales#readme",
+  "dependencies": {
+    "minify": "^11.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
